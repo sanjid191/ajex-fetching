@@ -18,14 +18,6 @@ h1 {
     text-align: center;
 }
 
-input {
-    width: 80%;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
 button {
     padding: 10px 20px;
     border: none;
@@ -33,12 +25,14 @@ button {
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
+    margin: 20px auto;
 }
 
 button:hover {
     background-color: #218838;
 }
 
-#repoData {
+#dataContainer {
     margin-top: 20px;
 }

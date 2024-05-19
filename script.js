@@ -1,16 +1,9 @@
-
-document.getElementById('fetchRepo').addEventListener('click', function() {
-    const repoName = document.getElementById('repoName').value;
-    if (!repoName) {
-        alert('Please enter a user ID');
-        return;
-    }
-
-    fetchDemoData(repoName);
+document.getElementById('fetchData').addEventListener('click', function() {
+    fetchDemoData();
 });
 
-function fetchDemoData(repoName) {
-    const url = `https://github.com/sanjid191/ajex-fetching/blob/main/demoData.json`;
+function fetchDemoData() {
+    const url = 'https://github.com/sanjid191/ajex-fetching/blob/main/demoData.json';
 
     fetch(url)
         .then(response => {
@@ -20,16 +13,16 @@ function fetchDemoData(repoName) {
             return response.json();
         })
         .then(data => {
-            displayDemoData(data);
+            displayData(data);
         })
         .catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
-            document.getElementById('repoData').innerText = 'Error fetching data';
+            document.getElementById('dataContainer').innerText = 'Error fetching data';
         });
 }
 
-function displayDemoData(data) {
-    const demoData = `
+function displayData(data) {
+    const dataHTML = `
         <h2>${data.name}</h2>
         <p><strong>Username:</strong> ${data.username}</p>
         <p><strong>Email:</strong> ${data.email}</p>
@@ -39,5 +32,5 @@ function displayDemoData(data) {
         <p><strong>Company:</strong> ${data.company.name}</p>
     `;
 
-    document.getElementById('repoData').innerHTML = demoData;
+    document.getElementById('dataContainer').innerHTML = dataHTML;
 }
