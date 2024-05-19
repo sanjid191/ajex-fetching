@@ -10,7 +10,7 @@ document.getElementById('fetchRepo').addEventListener('click', function() {
 });
 
 function fetchDemoData(repoName) {
-    const url = `https://git@github.com:sanjid191/ajex-fetching.gitn`;
+    const url = `https://github.com/sanjid191/ajex-fetching/blob/main/demoData.json`;
 
     fetch(url)
         .then(response => {
