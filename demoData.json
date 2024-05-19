@@ -1,17 +1,26 @@
-{
-    "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
-    "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874"
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30,
+        "email": "john@example.com",
+        "address": {
+            "street": "123 Main St",
+            "city": "New York",
+            "zip": "10001"
+        },
+        "hobbies": ["Reading", "Gardening", "Cooking"]
     },
-    "phone": "1-770-736-8031 x56442",
-    "website": "hildegard.org",
-    "company": {
-        "name": "Romaguera-Crona"
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 25,
+        "email": "jane@example.com",
+        "address": {
+            "street": "456 Elm St",
+            "city": "Los Angeles",
+            "zip": "90001"
+        },
+        "hobbies": ["Hiking", "Painting", "Dancing"]
     }
-}
+]
