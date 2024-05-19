@@ -3,7 +3,7 @@ document.getElementById('fetchData').addEventListener('click', function() {
 });
 
 function fetchDemoData() {
-    const url = 'https://github.com/sanjid191/ajex-fetching/blob/main/demoData.json';
+    const url = 'https://raw.githubusercontent.com/sanjid191/ajex-fetching/main/demoData.json';
 
     fetch(url)
         .then(response => {
